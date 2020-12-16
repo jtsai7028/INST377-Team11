@@ -9,7 +9,7 @@ There have been massive changes in popular music over time. From the jazz jubile
 Stakeholders who would be interested in our project include the artists writing the music, their producers editing and choosing songs to release, and labels and record companies looking for talented artists to be their next profitable investment. Our current target browser is Google Chrome browser, because it is one of the most-used browsers in technology.
  
 ### Data
-We choose to work with Spotify API and web scrape information from the Billboard 100.  Spotify has extensive documentation about their API and it also has music, so we chose to work with Spotify data.  Little did we know the trouble this would bring us.
+We choose to work with Spotify API and web scrape information from the Billboard 100.  Spotify has extensive documentation about their API and it also has music, so we chose to work with Spotify data.  In addition, a recent Spotify Connect beta version supposedly allows apps to play clips of Spotify songs in-browser.  Little did we know the trouble this would bring us.
  
 ### Strategies and Solutions
 Our project will take metadata from Spotify (e.g. “artist”, “album”) and use crossline textualization with billboard data to see which songs are popular and analyze their structure using metadata from Spotify, to see what factors are most important in creating a “hit song”. We will be using the Spotify API because it has a lot of “endpoint data” (metadata) that we can explore. The API also comes with extensive documentation about how to use and import the data for us to customize our project. Using this data, we can find other songs on Spotify that meet the standards for a “hit” as “predictions”.
