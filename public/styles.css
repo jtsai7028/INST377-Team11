@@ -103,6 +103,45 @@ td {
   padding: 15px;
 }
 
+.button { /* written in SCSS*/
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+
+  border-color: #e6bc87 #e6bc87 #e6bc87 #202020;
+  transition: 100ms all ease;
+  cursor: pointer;
+
+
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+
+  .paused {
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+  }
+
+  &:hover {
+    border-color: #e6bc87 #e6bc87 #e6bc87 #202020;
+  }
+}
+
+
+/* .button.play { */
+/* box with thick border */
+/* width: 74px;
+height: 74px;
+border-style: solid;
+border-color: #202020; */
+/* differentiate borders and make triangle */
+/* border-width: 37px 0px 37px 74px; */
+/* form triangle */
+/* box-sizing: border-box;
+border-color: #e6bc87 #e6bc87 #e6bc87 #404040;
+} */
+
 @media screen and (max-width: 1000px) {
   .container {
     justify-content: center;
@@ -130,32 +169,32 @@ td {
     rgba(2, 0, 36, 1) 0%,
     rgba(81, 9, 121, 0.7525385154061625) 35%,
     rgba(0, 212, 255, 1) 100%
-  );
-  display: flex;
-  flex-direction: column;
-  color: white;
-  width: 500px;
-  padding: 10px;
-  border: 5px none;
-  margin-bottom: 5%;
-}
+    );
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 500px;
+    padding: 10px;
+    border: 5px none;
+    margin-bottom: 5%;
+  }
 
-td span {
-  font-size: 36px;
-}
+  td span {
+    font-size: 36px;
+  }
 
-.docu {
-  display: flex;
-  flex-direction: column;
-}
-.first_halph {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-}
+  .docu {
+    display: flex;
+    flex-direction: column;
+  }
+  .first_halph {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
 
-.secound_halph {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-}
+  .secound_halph {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  }

@@ -1,6 +1,5 @@
 import { response } from "express";
 import request from "request";
-import d3 from "d3";
 
 let ratingArray = [];
 let songsArray = [];
@@ -32,18 +31,9 @@ function tempsearch(query2) {
 };
 
 
-//
-// for (let k = 0; k < songsArray.length; k++){
-// let song_name = songsArray[k];
-// let artist = artistsArray[k];
-// response.json({"rating": rating, "song_title": song_name, "artist": artist});
-// }
 
-
-//read billboard_data.csv
-d3.csv("billboard_data.csv", function(data) {
-  for (let i = 0; i < 100; i++) {
-    const jsonString = JSON.stringify(data);
-    console.log(jsonString); // turned stuff into JSON
-  }
-});
+for (let k = 0; k < songsArray.length; k++){
+let song_name = songsArray[k];
+let artist = artistsArray[k];
+response.json({"rating": rating, "song_title": song_name, "artist": artist});
+}
